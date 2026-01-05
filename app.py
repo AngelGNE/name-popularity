@@ -133,7 +133,7 @@ class NamePopularityApp:
                         NAMES[year] = {}
                     NAMES[year][(name, sex)] = (int(count), int(rank))
         except Exception as e:
-            messagebox.showerror("Error!", f"Failed to load cache: {e}")
+            #messagebox.showerror("Error!", f"Failed to load cache: {e}")
 
     def saveCache(self, event = None):
         if self.is_caching:
